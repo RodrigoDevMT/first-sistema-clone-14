@@ -53,13 +53,13 @@ const Products = () => {
               <CardContent>
                 <p className="text-textGray mb-4">{product.description}</p>
                 {product.images && (
-                  <div className="grid grid-cols-2 gap-4 mt-4">
+                  <div className="grid grid-cols-2 gap-2">
                     {product.images.map((image, idx) => (
                       <img
                         key={idx}
                         src={image}
                         alt={`${product.title} - Imagem ${idx + 1}`}
-                        className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+                        className="w-full h-auto rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
                       />
                     ))}
                   </div>
