@@ -15,20 +15,49 @@ const Hero = () => {
       
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center text-white max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-up">
-            Transformando Ideias em Soluções Digitais
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-up">
-            Desenvolvimento de sistemas personalizados, aplicativos web e mobile para impulsionar seu negócio ao próximo nível.
-          </p>
-          <Button
-            size="lg"
-            className="bg-white text-primary hover:bg-gray-100 animate-fade-up"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Fale Conosco
-          </Button>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          {/* Text Content */}
+          <div className="text-white max-w-2xl">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-up">
+              Transformando Ideias em Soluções Digitais
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-up">
+              Desenvolvimento de sistemas personalizados, aplicativos web e mobile para impulsionar seu negócio ao próximo nível.
+            </p>
+            <Button
+              size="lg"
+              className="bg-white text-primary hover:bg-gray-100 animate-fade-up"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Fale Conosco
+            </Button>
+          </div>
+
+          {/* Images Container */}
+          <div className="bg-black/30 p-6 rounded-xl backdrop-blur-sm animate-fade-up">
+            <div className="grid grid-cols-2 gap-4">
+              <img
+                src="/lovable-uploads/3cd42689-d953-409e-be7c-a086e97c130a.png"
+                alt="Terminal First Tickets 1"
+                className="w-48 h-auto rounded-lg"
+              />
+              <img
+                src="/lovable-uploads/a3f58c81-bfde-49f0-ae94-43f5762c2acb.png"
+                alt="Terminal First Tickets 2"
+                className="w-48 h-auto rounded-lg"
+              />
+              <img
+                src="/lovable-uploads/b0db2735-0ba8-4c37-bbc2-0cec9837d6b5.png"
+                alt="Terminal First Tickets 3"
+                className="w-48 h-auto rounded-lg"
+              />
+              <img
+                src="/lovable-uploads/d930562f-6552-40b3-a2f7-55a3b3b74ce4.png"
+                alt="Terminal First Tickets 4"
+                className="w-48 h-auto rounded-lg"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
