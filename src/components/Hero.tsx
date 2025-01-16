@@ -2,8 +2,19 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="pt-32 pb-20 bg-gradient-to-br from-primary to-primary-light">
-      <div className="container mx-auto px-4">
+    <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary to-primary-light overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0 opacity-20"
+        style={{
+          backgroundImage: "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      />
+      
+      {/* Content */}
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center text-white max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-up">
             Transformando Ideias em Soluções Digitais
