@@ -35,7 +35,7 @@ const Hero = () => {
 
           {/* Images Container */}
           <div className="bg-black/30 p-6 rounded-xl backdrop-blur-sm animate-fade-up">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex gap-4">
               <img
                 src="/lovable-uploads/3cd42689-d953-409e-be7c-a086e97c130a.png"
                 alt="Terminal First Tickets 1"
@@ -44,16 +44,6 @@ const Hero = () => {
               <img
                 src="/lovable-uploads/a3f58c81-bfde-49f0-ae94-43f5762c2acb.png"
                 alt="Terminal First Tickets 2"
-                className="w-48 h-auto rounded-lg"
-              />
-              <img
-                src="/lovable-uploads/b0db2735-0ba8-4c37-bbc2-0cec9837d6b5.png"
-                alt="Terminal First Tickets 3"
-                className="w-48 h-auto rounded-lg"
-              />
-              <img
-                src="/lovable-uploads/d930562f-6552-40b3-a2f7-55a3b3b74ce4.png"
-                alt="Terminal First Tickets 4"
                 className="w-48 h-auto rounded-lg"
               />
             </div>
